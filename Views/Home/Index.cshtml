@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div class="containerMY">
+        <form method="post" enctype="multipart/form-data">
+        
+        <p>
+                <label>Name</label><br />
+            <input type="text" name="name" required />
+        </p>
+        <p>
+            <label>Date</label><br />
+            <input type="date" name="date" required/>
+        </p>
+        <p>
+            <label>Adres</label><br />
+            <input type="text" name="adres" required />
+        </p>
+            <p>
+                <label>Image</label>
+                <input type="file" name="image" accept="image/*" required />
+            </p>
+
+        <p>
+            <input type="submit" value="Send"/>
+        </p>
+     </form>
+    </div>
+</div>
